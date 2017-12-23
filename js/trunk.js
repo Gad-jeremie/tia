@@ -36,30 +36,4 @@ $(function() {
         }
     });
 
-
- $('.search-toggle').addClass('close');
-
-  //toggle close/open on click of toggle
-  $('.search-toggle').click(function(e) {
-    if ($(this).hasClass('close')) {
-      $(this).removeClass('close').addClass('open');
-      $('.search-toggle, .search-container').addClass('open');
-    }
-    else {
-      $(this).removeClass('open').addClass('close');
-      $('.search-toggle, .search-container').removeClass('open');
-    }
-  });
-
-  // close when click off of container
-  $(document).on('click touchstart', function (e){
-    $(".site-search__input").focus();
-    if (!$(e.target).is('.search-toggle, .search-toggle *, .search-container, .search-container *')) {
-      $('.search-toggle, .search-container').removeClass('open');
-      $('.search-toggle').addClass('close');
-    }
-  });
-
 });
-
-

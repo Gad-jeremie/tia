@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+<title>Trunk-js Plain</title> 
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Style Sheets --> 
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/trunk.css" />
+
+
+<!-- Scripts --> 
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + 
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+</head> 
+ <style type="text/css">
+ 
+</style>
+<body> 
+
+<div class="container">
+
+	<header class="slide">  
+
+
+<!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<li></li><li></li><li></li>
+		</ul>
+		<h1>Trunk.js</h1>
+
+<div class="search-toggle">
+  <svg class="search-toggle__icon icon-search"><use xlink:href="#icon-search"></use></svg>
+  <svg class="search-toggle__icon icon-cancel"><use xlink:href="#icon-cancel"></use></svg>
+</div> 
+
+<!-- search body -->  
+<div class="search-container">
+    <div class="site-search">    
+    <form action="/searchresults.asp" method="get" name="SearchBoxForm">
+        <input type="text" name="Search" class="site-search__input" value="" placeholder="Search Keywords..."/>
+        <div class="site-search__btn-wrap"> 
+            <svg class="site-search__icon icon icon-search"><use xlink:href="#icon-search"></use></svg>
+        	<input type="submit" name="Submit" class="site-search__submit" value="Go" />
+        </div>
+    </form>
+</div> <!-- .site-search -->
+</div>
+
+<!-- desktop -->
+	</header>
+
+	<nav class="slide">
+		<ul>
+			<li><a href="../trunk.html" class="active">HOME</a></li>
+			<li><a href="#">LINK TWO</a></li>
+			<li><a href="#">LINK THREE</a></li>
+			<li><a href="#">LINK FOUR</a></li>
+			<li><a href="#">LINK FIVE</a></li>
+			<li><a href="#">LINK SIX</a></li>
+			<li><a href="#">LINK SEVEN</a></li>
+
+			<li>
+			<div class="search-toggle">
+          <svg class="search-toggle__icon icon-search"><use xlink:href="#icon-search"></use></svg>
+         <svg class="search-toggle__icon icon-cancel"><use xlink:href="#icon-cancel"></use></svg>
+        </div> 
+
+
+          </li>
+ 
+
+		</ul>
+
+	<!-- search body -->  
+
+
+	</nav>
+
+<div id="desk">
+<div class="search-container">
+    <div class="site-search">    
+    <form action="/searchresults.asp" method="get" name="SearchBoxForm">
+        <input type="text" name="Search" class="site-search__input" value="" placeholder="Search Keywords..."/>
+        <div class="site-search__btn-wrap"> 
+            <svg class="site-search__icon icon icon-search"><use xlink:href="#icon-search"></use></svg>
+        	<input type="submit" name="Submit" class="site-search__submit" value="Go" />
+        </div>
+    </form>
+</div> <!-- .site-search -->
+</div>
+</div>
+	
+	<div class="content slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul class="responsive">
+			<li class="header-section">
+				<p class="placefiller">HEADER</p>
+			</li>
+			<li class="body-section">
+				<p class="placefiller">BODY</p>
+			</li>
+			<li class="footer-section">
+				<p class="placefiller">FOOTER</p>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-search" viewBox="0 0 967 1024">
+	<title>Search</title>
+	<path class="path1" d="M927.651 1002.753c-44.251 33.741-108.699 26.532-143.71-16.175l-149.588-166.668c-22.479-27.3-87.619-120.425-76.684-151.086-68.768 38.258-148.227 54.19-228.698 45.118-98.843-11.080-187.17-58.555-248.728-133.512-61.597-74.98-89.201-168.615-77.68-263.732 11.513-95.178 60.76-180.28 138.691-239.626 160.919-122.493 395.396-96.129 522.703 58.813 115.505 140.737 103.551 339.777-20.015 466.955 33.574-3.293 128.288 67.391 150.873 94.836l149.695 166.714c35.011 42.707 27.513 104.646-16.859 138.364zM629.706 387.138c8.046-66.319-11.171-131.611-54.114-183.869-88.691-108.075-252.241-126.516-364.522-41.133-112.227 85.558-131.33 242.979-42.578 350.956 88.707 108.075 252.219 126.524 364.499 41.087 54.319-41.346 88.669-100.676 96.714-167.041z"></path>
+</symbol>
+  <symbol id="icon-cancel" viewBox="0 0 1024 1024">
+	<title>cancel</title>
+	<path class="path1" d="M626.784 512.032l195.072 195.072c12.672 12.672 12.672 33.248 0 45.92l-68.832 68.832c-12.672 12.672-33.216 12.672-45.92 0l-195.104-195.072-195.104 195.072c-12.672 12.672-33.216 12.672-45.888 0l-68.864-68.832c-12.672-12.672-12.672-33.216 0-45.92l195.104-195.072-195.104-195.104c-12.672-12.672-12.672-33.248 0-45.92l68.896-68.832c12.672-12.672 33.216-12.672 45.888 0l195.072 195.104 195.104-195.104c12.672-12.672 33.216-12.672 45.92 0l68.832 68.864c12.672 12.672 12.672 33.216 0 45.92l-195.072 195.072z"></path>
+</symbol>
+  
+</defs>
+</svg>
+	
+</body> 
+</html>
+
+
+
+
+
+
+<script type="text/javascript"> 
+</script>

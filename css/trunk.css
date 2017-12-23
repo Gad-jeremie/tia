@@ -108,136 +108,6 @@ nav li a:hover {color: #000;}
 	border: 1px dashed rgba(190, 196, 202, 0.9);
 }
 
-
-
-nav.slide .search-toggle{
-height: 28px;
-  width: 28px;
-  display: inline;	
-}
-
-nav.slide .search-toggle__icon {
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  height: 27px;
-  width: 27px;
-  display: inline;
-  fill: #fff;
-  cursor: pointer;
-  position: absolute;
-  right: 1.23em;
-  top:1.55em;
-}
-nav.slide .search-toggle .icon-search {
-  visibility: visible;
-  opacity: 1;
-}
-  .search-toggle .icon-cancel {
-  visibility: hidden;
-  opacity: 0;
-}
-
-  .search-toggle.open .icon-cancel {
-  visibility: visible;
-  opacity: 1;
-}
- .search-toggle.open .icon-search {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.search-container {
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  max-height: 0px;
-  overflow: hidden;
-}
-
-.search-container.open {
-  max-height: 50px;
-}
-
-.site-search form {
-  position: relative;
-  height: 50px;
-  max-width: 1000%;
-  top:1em;
-}
-
-#desk{display: block;}
-#desk .site-search__input {
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  background: #eee;
-  font-size: 14px;
-  border: 1px solid #eee;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 2px rgba(30, 144, 255, 0);
-  padding: 0px 28px 8px 10px!important;
-  /* @include placeholder(#a8a8a8);
-  @include placeholderFocus(#dadada);
-  */
-}
-.site-search__input:focus {
-  outline: none;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  box-shadow: 0 0 1px rgba(30, 144, 255, 0.3);
-  border: 1px solid rgba(30, 144, 255, 0.3);
-}
-.site-search__btn-wrap {
-  height: 100%;
-  width: 28px;
-  position: absolute;
-  top: 0;
-  right: 5%;
-}
-.site-search__btn-wrap:hover .site-search__icon {
-  fill: dodgerblue;
-}
-.site-search__submit {
-  font: 0/0 serif;
-  text-shadow: none;
-  color: transparent;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: none;
-  border: none;
-}
-.site-search__icon {
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -14px;
-  width: 28px;
-  height: 28px;
-  fill: gray;
-}
-
-
-
-
-
-
-
-
-
 /*hide search for full on phone*/
 
 
@@ -253,11 +123,6 @@ header.slide .search-container{
  
 
 @media only screen and (max-width: 780px) {
-
-nav.slide .search-toggle{
-display: none;	
-}
-
 header.slide .search-container{
 	display: block;
 }	
@@ -318,7 +183,7 @@ header.slide .search-toggle {
   height: 50px;
   max-width: 1000%;
 }
-header.slide .site-search__input {
+.site-search__input {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;

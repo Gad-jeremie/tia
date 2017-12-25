@@ -67,7 +67,7 @@ header h1 {
 nav {
 	position: absolute;
 	top: 0;
-	right: 5px;
+	right: 70px;/*gad*/
 }
 nav li {
 	float: left;
@@ -109,11 +109,33 @@ nav li a:hover {color: #000;}
 }
 
 
-
-
+ 
 
 
 @media only screen and (max-width: 780px) {
+
+ul.dropdown {
+  display:none;
+  position: relative;
+  top: .5em!important;
+ margin: 0 auto!important;
+  background: #777;
+  right: 0!important;
+ width: 100%!important;
+  padding: 0!important;
+  border-radius: 0 0 .2em .2em;}
+
+
+
+/*.search-toggle {
+  position: absolute;
+  top: 50%;
+  right: -10em!important;
+}*/
+
+ 
+
+  
 
 header {
 	height: 60px;
@@ -192,7 +214,7 @@ nav {
 }
 
 /*Nav Expanding Open Effect*/
-nav.open {
+nav.openi {
 	opacity: 1;
 
 	-webkit-transform: translate3d(0,0,0)scale(1);
@@ -267,8 +289,8 @@ nav.close {
 }
 
 /*Content Sliding Open Effect*/
-header.open,
-.content.open 
+header.openi,
+.content.openi 
 {   
 	-webkit-transform: translate3d(240px,0,0);
 	-webkit-animation: open .5s ease-in-out;

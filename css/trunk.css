@@ -56,8 +56,8 @@ header h1 {
 	display: none;
 }
 .burger li {
-	width: 30px;
-	height: 4px;
+	width: 27px;
+    height: 3px;
 	background-color: #fff;
 	border-radius: 3px;
 	margin: 5px 0;
@@ -151,6 +151,7 @@ ul.dropdown {
 
 .search-icon {
  color: #fff!important;
+ font-size: 11px!important;
 }
   
 

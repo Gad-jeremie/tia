@@ -123,7 +123,8 @@ ul.dropdown {
   right: 0!important;
  width: 100%!important;
   padding: 0!important;
-  border-radius: 0 0 .2em .2em;}
+  border-radius: 0 0 .2em .2em;
+}
 
 
 
@@ -133,8 +134,24 @@ ul.dropdown {
   right: -10em!important;
 }*/
 
- 
+ .search-toggle {
+ /*background: rgba(255, 255, 255, 0.3);*/
+  -webkit-box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+ padding: 1.1em!important;
+  font-size: 1.2em; 
+  line-height: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+   position: absolute;
+  top: 31px;
+  right: -.2em!important;
+}
 
+.search-icon {
+ color: #fff!important;
+}
   
 
 header {

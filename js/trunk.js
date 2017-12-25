@@ -13,25 +13,25 @@ $(function() {
     var items = $('.slide');
     var content = $('.content');
 
-    function open() {
-        $(items).removeClass('close').addClass('open');
+    function openi() {
+        $(items).removeClass('close').addClass('openi');
     }
 
     function close() {
-        $(items).removeClass('open').addClass('close');
+        $(items).removeClass('openi').addClass('close');
     }
 
     $('#navToggle').on(clickevent, function() {
         event.stopPropagation();
         event.preventDefault();
-        if (content.hasClass('open')) {
+        if (content.hasClass('openi')) {
             close()
         } else {
-            open()
+            openi()
         }
     });
     content.click(function() {
-        if (content.hasClass('open')) {
+        if (content.hasClass('openi')) {
             close()
         }
     });

@@ -146,7 +146,7 @@ ul.dropdown {
   transform: translate(-50%, -50%);
    position: absolute;
   top: 31px;
-  right: -.2em!important;
+  right: 0em!important;
 }
 
 .search-icon {

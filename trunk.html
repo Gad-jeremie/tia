@@ -51,25 +51,21 @@
   border-radius: .2em .2em 0 0;
 }*/
 
- 
- .search-toggle {
-  position: absolute;
-  top: 31px;
-  right: .1em;
-}
 
 /* the animated search icon */
 .search-toggle {
-  color: currentColor;
 /*  background: rgba(255, 255, 255, 0.3);*/
   -webkit-box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
   border-radius: 100%;
  padding: 1.4em;
-  font-size: 1.2em;
+  font-size: 1.2em; 
   line-height: 0;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+    position: absolute;
+  top: 31px;
+  right: .1em;
 }
 
 .search-icon {
@@ -80,13 +76,13 @@
   display: inline-block;
   vertical-align: middle;
   font-size: 13px;
-  color: #fff;
+   color: red;
 /*  background: rgba(255, 255, 255, 0.3);*/
   border-radius: 100%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
   line-height: 0;
 }
 .search-icon:before, .search-icon:after {
@@ -94,25 +90,25 @@
   display: block;
   content: '';
   border-radius: 2em;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 .search-icon:before {
   -webkit-box-shadow: 0 0  0 .25em;
-          box-shadow: 0 0  0 .25em;
+  box-shadow: 0 0  0 .25em;
   width: 1em;
   height: 1em;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-75%, -75%);
-          transform: translate(-75%, -75%);
+  transform: translate(-75%, -75%);
 }
 .search-icon:after {
   width: 1em;
   height: .3em;
   background: currentColor;
   -webkit-transform: translate(0%, 100%) rotate(45deg);
-          transform: translate(0%, 100%) rotate(45deg);
+  transform: translate(0%, 100%) rotate(45deg);
   top: 50%;
   left: 50%;
 }
@@ -121,11 +117,11 @@
 .open .search-icon {
   background-color: transparent;
   -webkit-transform: translate(-1em, -0.15em);
-          transform: translate(-1em, -0.15em);
+  transform: translate(-1em, -0.15em);
 }
 .open .search-icon:before, .open .search-icon:after {
   -webkit-box-shadow: 0 0 0 0;
-          box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
   width: 2em;
   height: .3em;
   background: currentColor;

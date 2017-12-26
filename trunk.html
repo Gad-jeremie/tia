@@ -129,23 +129,23 @@ border-radius: 100%;
 }
 
 /* active search/x icon */
-.open .search-icon {
+.opened .search-icon {
   background-color: transparent;
   -webkit-transform: translate(-1em, -0.15em);
   transform: translate(-1em, -0.15em);
 }
-.open .search-icon:before, .open .search-icon:after {
+.opened .search-icon:before, .opened .search-icon:after {
   -webkit-box-shadow: 0 0 0 0;
   box-shadow: 0 0 0 0;
   width: 2em;
   height: .3em;
   background: currentColor;
 }
-.open .search-icon:before {
+.opened .search-icon:before {
   -webkit-transform: translate(0, 0) rotate(225deg);
           transform: translate(0, 0) rotate(225deg);
 }
-.open .search-icon:after {
+.opened .search-icon:after {
   -webkit-transform: translate(0, 0) rotate(-225deg);
           transform: translate(0, 0) rotate(-225deg);
 }
@@ -245,7 +245,7 @@ $('.search-toggle').click(function(){
 
   document.querySelector( ".search-toggle" )
   .addEventListener( "click", function() {
-    this.classList.toggle( "open" );
+    this.classList.toggle( "opened" );
   });
 
  

@@ -60,7 +60,7 @@ header h1 {
     height: 3px;
 	background-color: #fff;
 	border-radius: 3px;
-	margin: .3em 0;
+	margin: .35em 0;
 }
 .burger.open li {background-color: #d9dde1;}
 

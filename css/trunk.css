@@ -50,17 +50,18 @@ header h1 {
 	position: absolute;
 	float: left;
 	padding: 10px;
-	top: 4px;
+	top: .79em;
 	left: 10px;
+	background: red;
 	
 	display: none;
 }
 .burger li {
-	width: 27px;
+	width: 19px;
     height: 3px;
 	background-color: #fff;
 	border-radius: 3px;
-	margin: 5px 0;
+	margin: .3em 0;
 }
 .burger.open li {background-color: #d9dde1;}
 

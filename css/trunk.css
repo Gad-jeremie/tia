@@ -1,364 +1,264 @@
-body {
-	background-color: #000;
-	
-	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #9aa6af;
-	text-rendering: optimizelegibility;
-	
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
-	-webkit-text-size-adjust: none;
-	-webkit-font-smoothing: antialiased;
-	
-	-moz-tap-highlight-color:rgba(0,0,0,0); 
-	-moz-text-size-adjust: none;
-	-moz-font-smoothing: antialiased;
-	
-	-ms-tap-highlight-color:rgba(0,0,0,0); 
-	-ms-text-size-adjust: none;
-	-ms-font-smoothing: antialiased;
-}
-a {text-decoration: none;}
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
 
-.container {
-	overflow: hidden;
-	background-color: #000;
+<title>Trunk-js Plain</title> 
 
-/*  Prevents Flickering  */
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-}
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Style Sheets --> 
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/trunk.css" />
+
+<!-- Scripts --> 
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + 
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<style type="text/css">
 
 
 
-
-header {
-	height: 60px;
-	position: relative;
-	background-color: #f3f5f6;
-}
-header h1 {
-	color: #9aa6af;
-	text-align: left;
-	font-size: 27px;
-	line-height: 60px;
-	font-weight: bold;
-	padding-left: 20px;
-}
-
-.burger {
-	position: absolute;
-	float: left;
-	padding: 10px;
-	top: 4px;
-	left: 10px;
-	
-	display: none;
-}
-.burger li {
-	width: 27px;
-    height: 3px;
-	background-color: #fff;
-	border-radius: 3px;
-	margin: 5px 0;
-}
-.burger.open li {background-color: #d9dde1;}
-
-nav {
-	position: absolute;
-	top: 0;
-	right: 70px;/*gad*/
-}
-nav li {
-	float: left;
-	
-	display: inline-block;
-}
-nav li a {
-	font-size: 11px;
-	color: #9aa6af;
-	padding: 24px 15px;
-	
-	display: block;
-}
-nav li a:hover {color: #000;}
-
-
-
-
-/*  Removable CSS  */
-
-.header-section,
-.body-section,
-.footer-section 
-{padding: 20px;}
-
-.header-section {background-color: #ffffff;}
-.body-section {background-color: #f4f5f6;}
-.footer-section {background-color: #dadee1;}
-.placefiller {
-	text-align: center;
-	font-size: 20px;
-	border: 1px dashed rgba(190, 196, 202, 0.5);
-}
-.header-section .placefiller {line-height: 300px;}
-.body-section .placefiller {line-height: 900px;}
-.footer-section .placefiller {
-	line-height: 200px;
-	border: 1px dashed rgba(190, 196, 202, 0.9);
-}
-
-
- 
-
-
-@media only screen and (max-width: 780px) {
-
-ul.dropdown {
+	ul.dropdown {
   display:none;
-  position: relative;
-  top: .5em!important;
- margin: 0 auto!important;
-  background: #777;
-  right: 0!important;
- width: 100%!important;
-  padding: 0!important;
-  border-radius: 0 0 .2em .2em;
-}
-
-
-
-/*.search-toggle {
   position: absolute;
-  top: 50%;
-  right: -10em!important;
+  top: 5em;
+  right: 2em;
+ /* margin-top: 5em;*/
+  background: #777;
+  width: 40%;
+  padding: 0;
+  border-radius: 0 0 .2em .2em;}
+
+  .dropdown li {
+      list-style-type: none;
+  }
+      .dropdown a {
+        text-decoration: none;
+        padding: .5em 1em;
+        display: block;
+      }
+/*   .dropdown-toggle {
+  padding: .5em 1em;
+  background: #777;
+  border-radius: .2em .2em 0 0;
 }*/
 
- .search-toggle {
+
+/* the animated search icon */
+.search-toggle {
 /*background: rgba(255, 255, 255, 0.3);*/
   -webkit-box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
-  /*border-radius: 100%;*/
- padding: 1.09em!important;
-    
+/*  border-radius: 100%;*/
+ padding: 1.4em;
+  font-size: 1.2em; 
   line-height: 0;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-   position: absolute;
-  top: 2.3em!important;
-  right: 0em!important;
+    position: absolute;
+  top: 33px;
+  right: .1em;
+   cursor: pointer;
+}
+
+/*to go to mobile
+*/#Layer_1{position:absolute;
+  height: 16px;width: 16px;  
+  vertical-align: middle;
+  top: 16px!important;
+  right: 4.6em;
+/*background: #444;*/
+  padding: .65em;
+  cursor: pointer;
 }
 
 .search-icon {
- color: #fff!important;
- font-size: .55em!important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+ 
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 10px;
+   color: red;
+/*  background: rgba(255, 255, 255, 0.3);*/
+border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  line-height: 0;
 }
+.search-icon:before, .search-icon:after {
+  position: absolute;
+  display: block;
+  content: '';
+  border-radius: 2em;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.search-icon:before {
+  -webkit-box-shadow: 0 0  0 .25em;
+  box-shadow: 0 0  0 .25em;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-75%, -75%);
+  transform: translate(-75%, -75%);
+}
+.search-icon:after {
+  width: 1em;
+  height: .3em;
+  background: currentColor;
+  -webkit-transform: translate(0%, 100%) rotate(45deg);
+  transform: translate(0%, 100%) rotate(45deg);
+  top: 50%;
+  left: 50%;
+}
+
+/* active search/x icon */
+.open .search-icon {
+  background-color: transparent;
+  -webkit-transform: translate(-1em, -0.15em);
+  transform: translate(-1em, -0.15em);
+}
+.open .search-icon:before, .open .search-icon:after {
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+  width: 2em;
+  height: .3em;
+  background: currentColor;
+}
+.open .search-icon:before {
+  -webkit-transform: translate(0, 0) rotate(225deg);
+          transform: translate(0, 0) rotate(225deg);
+}
+.open .search-icon:after {
+  -webkit-transform: translate(0, 0) rotate(-225deg);
+          transform: translate(0, 0) rotate(-225deg);
+}
+
+</style>
+</head> 
+ 
+<body> 
+
+<div class="container">
+
+	<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<li></li><li></li><li></li>
+   
+
+ 
+		</ul>
+		<h1>Trunk.js</h1>
+			<!-- drop --> 
+<!--  <ul class="dropdown">
+  <li><a href="#">Menu Item</a></li>
+  <li><a href="#">Menu</a></li>
+  <li><a href="#">Settings</a></li>
+  <li><a href="#">Search</a></li>
+</ul> --> 
+
+<!-- user -->
+<span id="Layer_1" ><a href="#"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.cls-1{fill:#fff;}</style></defs><!-- <title>user-glyph</title> --><path class="cls-1" d="M345.92,317.25,256,371.2l-89.92-54A172.78,172.78,0,0,0,51.2,480a32,32,0,0,0,32,32H428.8a32,32,0,0,0,32-32A172.78,172.78,0,0,0,345.92,317.25Zm-157.44-42.3c1.15.77,2.3,1.47,3.52,2.18V303l64,38.4L320,303V277.12c1.22-.7,2.37-1.41,3.52-2.18a122.75,122.75,0,0,0,25.6-21A127,127,0,0,0,384,166.4V128a128,128,0,0,0-256,0v38.4A127,127,0,0,0,162.88,254,122.75,122.75,0,0,0,188.48,274.94Z"/></svg></a></span>
+
+
+<span class="search-toggle"><i class="search-icon"></i></span>
+
+	</header>
+		<!-- drop --> 
+
+ 
+
+	<nav class="slide">
+		<ul>
+			<li><a href="../trunk.html" class="active">HOME</a></li>
+			<li><a href="#">LINK TWO</a></li>
+			<li><a href="#">LINK THREE</a></li>
+			<li><a href="#">LINK FOUR</a></li>
+			<li><a href="#">LINK FIVE</a></li>
+			<li><a href="#">LINK SIX</a></li>
+			<li><a href="#">LINK SEVEN</a></li>
+
+
+<!-- search bar icon -->      
+ 
+ 
+ 
+
+		</ul>
+	 
+      
+	</nav>
+
+ 
+	<div class="content slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+      <ul class="dropdown">
+  <li><a href="#">Menu Item</a></li>
+  <li><a href="#">Menu</a></li>
+  <li><a href="#">Settings</a></li>
+  <li><a href="#">Search</a></li>
+</ul>
+
+
+		<ul class="responsive">
+			<li class="header-section">
+				<p class="placefiller">HEADER</p>
+			</li>
+			<li class="body-section">
+				<p class="placefiller">BODY</p>
+			</li>
+			<li class="footer-section">
+				<p class="placefiller">FOOTER</p>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+
+	
+</body> 
+</html>
+
+
+<script type="text/javascript">
+	
+ $(document).ready(function() {
   
+// Dropdown toggle
+$('.search-toggle').click(function(){
+  $('.dropdown').toggle(400);
+});
 
-header {
-	height: 60px;
-	z-index: 2;
-	background-color: #060a0c;
-	
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	
-		/* starting point */
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-header h1 {
-	color: #ffffff;
-	text-align: center;
-	padding-left: 0;
-	display: block;
-}
-.burger {display: block;}
+ 
+
+});
 
 
-/*  Nav Drawer Layout  */
-nav {position: relative;}
+  document.querySelector( ".search-toggle" )
+  .addEventListener( "click", function() {
+    this.classList.toggle( "open" );
+  });
 
-nav ul {
-	height: 100%;
-	overflow-y: auto;
-}
-nav li {
-	display: block;
-	float: none;
-}
-nav li a {
-	padding: 22px 25px;
-	letter-spacing: 3px;
-	font-size: 14px;
-}
-nav li a.logo {
-	display: none;
-}
-nav li a.active {
-	color: #fff;
-	background-color: #141e23;
-}
-nav li a:hover {
-	color: #fff;
-	background-color: #19252c;
-}
-nav li:first-child a.active,
-nav li:first-child a:hover 
-{border-radius: 10px 0 0 0;}
-
-.header-section {margin-top: 60px;}
-
-
-/* NAVIGATION ANNIMATION */
-nav {
-	width: 93%;
-	height: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	margin: 0;
-	background-color: #1d2d35;
-	border-radius: 8px;
-	
-	/* starting point */
-	opacity: .3;
-	-webkit-transform: translate3d(5%,0,0)scale(.97);
-	-moz-transform: translate3d(5%,0,0)scale(.97);
-	transform: translate3d(5%,0,0)scale(.97);
-}
-
-/*Nav Expanding Open Effect*/
-nav.openi {
-	opacity: 1;
-
-	-webkit-transform: translate3d(0,0,0)scale(1);
-	-webkit-animation: slideIn .35s ease-in-out;
-	
-	-moz-transform: translate3d(0,0,0)scale(1);
-	-moz-animation: slideIn .35s ease-in-out;
-	
-	transform: translate3d(0,0,0)scale(1);
-	animation: slideIn .35s ease-in-out;
-}
-@-webkit-keyframes slideIn {
-	0%       {opacity: .3;
-				-webkit-transform: translate3d(5%,0,0)scale(.97);}
-	100%  {opacity: 1;
-				-webkit-transform: translate3d(0,0,0)scale(1);}
-}
-@-moz-keyframes slideIn {
-	0%      {opacity: .3;
-				-moz-transform: translate3d(5%,0,0)scale(.97);}
-	100%  {opacity: 1;
-				-moz-transform: translate3d(0,0,0)scale(1);}
-}
-@keyframes slideIn {
-	0%      {opacity: .3;
-				transform: translate3d(5%,0,0)scale(.97);}
-	100%  {opacity: 1;
-				transform: translate3d(0,0,0)scale(1);}
-}
-
-/*Nav Shrinking Closed Effect*/
-nav.close {
-	opacity: .3;
-	
-	-webkit-transform: translate3d(5%,0,0)scale(.97);
-	-webkit-animation: slideOut .3s ease-in-out;
-	
-	-moz-transform: translate3d(5%,0,0)scale(.97);
-	-moz-animation: slideOut .3s ease-in-out;
-	
-	transform: translate3d(5%,0,0)scale(.97);
-	animation: slideOut .3s ease-in-out;
-}
-@-webkit-keyframes slideOut {
-	0%      {opacity: 1;
-				-webkit-transform: translate3d(0,0,0)scale(1);}
-	100%  {opacity: .3;
-				-webkit-transform: translate3d(5%,0,0)scale(.97);}
-}
-@-moz-keyframes slideOut {
-	0%      {opacity: 1;
-				-moz-transform: translate3d(0,0,0)scale(1);}
-	100%  {opacity: .3;
-				-moz-transform: translate3d(5%,0,0)scale(.97);}
-}
-@keyframes slideOut {
-	0%      {opacity: 1;
-				transform: translate3d(0,0,0)scale(1);}
-	100%  {opacity: .3;
-				transform: translate3d(5%,0,0)scale(.97);}
-}
+ 
+</script>
 
 
 
-/* CONTENT ANNIMATION */
-.content {
-	/* starting point */
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-	z-index: 1;
-}
 
-/*Content Sliding Open Effect*/
-header.openi,
-.content.openi 
-{   
-	-webkit-transform: translate3d(240px,0,0);
-	-webkit-animation: open .5s ease-in-out;
-	
-	-moz-transform: translate3d(240px,0,0);
-	-moz-animation: open .5s ease-in-out;
-	
-	transform: translate3d(240px,0,0);
-	animation: open .5s ease-in-out;
-}
-@-webkit-keyframes open {
-	0%      {-webkit-transform: translate3d(0,0,0);}
-	70%    {-webkit-transform: translate3d(260px,0,0);}
-	100%  {-webkit-transform: translate3d(240px,0,0);}
-}
-@-moz-keyframes open {
-	0%      {-moz-transform: translate3d(0,0,0);}
-	70%    {-moz-transform: translate3d(260px,0,0);}
-	100%  {-moz-transform: translate3d(240px,0,0);}
-}
-@keyframes open {
-	0%      {transform: translate3d(0,0,0);}
-	70%    {transform: translate3d(260px,0,0);}
-	100%  {transform: translate3d(240px,0,0);}
-}
 
-/*Content Sliding Closed Effect*/
-header.close,
-.content.close 
-{
-	-webkit-transform: translate3d(0,0,0);
-	-webkit-animation: close .3s ease-in-out;
-	
-	-moz-transform: translate3d(0,0,0);
-	-moz-animation: close .3s ease-in-out;
-	
-	transform: translate3d(0,0,0);
-	animation: close .3s ease-in-out;
-}
-@-webkit-keyframes close {
-	0%      {-webkit-transform: translate3d(240px,0,0);}
-	100%  {-webkit-transform: translate3d(0,0,0);}
-}
-@-moz-keyframes close {
-	0%       {-moz-transform: translate3d(240px,0,0);}
-	100%  {-moz-transform: translate3d(0,0,0);}
-}
-@keyframes close {
-	0%       {transform: translate3d(240px,0,0);}
-	100%  {transform: translate3d(0,0,0);}
-}
 
-}

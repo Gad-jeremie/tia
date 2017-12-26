@@ -116,7 +116,7 @@ nav li a:hover {color: #000;}
 
 ul.dropdown {
   display:none;
-  position: fixed!important;
+  position: relative;
   top: .5em!important;
  margin: 0 auto!important;
   background: #777;

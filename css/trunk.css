@@ -57,10 +57,10 @@ header h1 {
 }
 .burger li {
 	width: 19px;
-    height: 3px;
+    height: .2em;
 	background-color: #fff;
 	border-radius: 3px;
-	margin: .35em 0;
+	margin: .38em 0;
 }
 .burger.open li {background-color: #d9dde1;}
 
